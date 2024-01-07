@@ -7,12 +7,10 @@ for _ in range(t):
         s = input().upper()
         list2 = [i for i in s]
         list1.append(list2)
-    for j in range(c-1):
-        if list1[0][j] == "D":
+    for j in range(c):
+        if list1[r-1][j] == "D":
             p+=1
-    if list1[0][-1] == "R":
-        p+=1
-    for i in range(1,r):
+    for i in range(r):
         if list1[i][-1] == "R":
             p+=1
     print(p)
